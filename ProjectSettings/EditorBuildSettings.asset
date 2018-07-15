@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/QiZi/scence/MainScene.unity
+    guid: db8e6acfaf872d840879c60aea22d746
+  - enabled: 1
+    path: Assets/Assets/_MyAssets/Stage/ChooseStage1/First.unity
+    guid: 08f220ef70c7da147a736d8a6ba1a551
+  - enabled: 1
+    path: Assets/Assets/_MyAssets/Stage/ChooseStage1/Second.unity
+    guid: 109be35fe6f8dc3468b94b16c491bdff
+  - enabled: 1
+    path: Assets/Assets/_MyAssets/Stage/ChooseStage1/Third.unity
+    guid: ccdf4945ad828d447a623d58c0e8f947
+  - enabled: 1
+    path: Assets/Assets/_MyAssets/Stage/ChooseStage1/Fourth.unity
+    guid: 756ebb7e4d4ea6848872b4c00a83d013
+  - enabled: 1
+    path: Assets/Assets/_MyAssets/Stage/ChooseStage1/Fifth.unity
+    guid: 00518551b944b9d48bb79e2a6add247a
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage1.unity
+    guid: 44a901f12270cbe489a18b4838045f23
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage1-2.unity
+    guid: 403f97356ec53ec409cab8dc2ed722d4
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage2.unity
+    guid: 67ba5fa0680592046b8c7ad0a5f716ef
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage3.unity
+    guid: 53fa76007c98c49479d201b531a88dce
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage4.unity
+    guid: 74487a59e519de5448d6c2071a79357f
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage5.unity
+    guid: f4aa9bcdec9775e4a880f16a3c53a2d3
+  - enabled: 1
+    path: Assets/QiZi/scence/2-1.unity
+    guid: 929ea3cd3a4168844b15e616d002a796
+  - enabled: 1
+    path: Assets/QiZi/scence/2-2.unity
+    guid: 09212496ac8ce184ba2bbc5f64ea7fd3
+  - enabled: 1
+    path: Assets/QiZi/scence/2-3.unity
+    guid: 6db518038e69a06499e7baa6058e7772
+  - enabled: 1
+    path: Assets/QiZi/scence/2-4.unity
+    guid: 2c199e84de696bf40a4fec38fcc67c43
+  - enabled: 1
+    path: Assets/QiZi/scence/2-5.unity
+    guid: eac534d0da4b0754ab76c84738f73711
+  - enabled: 1
+    path: Assets/QiZi/scence/2-6.unity
+    guid: 582a9d5b013a3dd4482159b6f2c9ce27
+  - enabled: 1
+    path: Assets/QiZi/scence/3-1.unity
+    guid: fa172a1b5aa040d4ba8d145064708d5e
+  - enabled: 1
+    path: Assets/QiZi/scence/3-2.unity
+    guid: 85042acc5acf934409e3e93a800cdb54
+  - enabled: 1
+    path: Assets/QiZi/scence/3-3.unity
+    guid: aeea98711863fa34dad3b5932710d1f9
+  - enabled: 1
+    path: Assets/QiZi/scence/3-4.unity
+    guid: be62a1e77796f4e48b37206136f6c825
+  - enabled: 1
+    path: Assets/QiZi/scence/3-5.unity
+    guid: 05109d905e1dea44482a5b4d4acb4b04
+  - enabled: 1
+    path: Assets/QiZi/scence/3-6.unity
+    guid: 71d4d556cd366964a8d295ebfbdbe2f5
+  - enabled: 1
+    path: Assets/QiZi/scence/4-1.unity
+    guid: 42b35dde01a1d34408eb085a2d6985a6
+  - enabled: 1
+    path: Assets/QiZi/scence/4-2.unity
+    guid: 560d162ce00f18d40a0392f6642ec3bd
+  - enabled: 1
+    path: Assets/QiZi/scence/4-3.unity
+    guid: 92eedae9a57cde94d8a350ab42f507fb
+  - enabled: 1
+    path: Assets/QiZi/scence/4-4.unity
+    guid: 16a64e0ad82773443bcd6813d51c5dc1
+  - enabled: 1
+    path: Assets/QiZi/scence/4-5.unity
+    guid: f9345ac8750406b409056091087231d6
+  - enabled: 1
+    path: Assets/QiZi/scence/4-6.unity
+    guid: 9140c8f75dcd4a0478356379ff0849e7
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage5-1.unity
+    guid: d89d410bf7932dc40938f3e557ee310c
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage5-2.unity
+    guid: 46d9f3c3e0c002145ad484660955d332
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage5-3.unity
+    guid: dfff788df5762494d99e983c8fac60db
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage5-4.unity
+    guid: c59349f779815b143a4d791c68d881a1
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage5-5.unity
+    guid: a648b51e92bf5eb4fb422be85667a695
+  - enabled: 1
+    path: Assets/QiZi/scence/Stage5-6.unity
+    guid: 603c72341f184de4cacc2598b6ed8576
+  - enabled: 1
+    path: Assets/Assets/_MyAssets/Stage/ChooseStage.unity
+    guid: 5982976082caa4f4ab4fb19ef2f25f2c
