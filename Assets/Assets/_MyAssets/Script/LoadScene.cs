@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,8 +8,7 @@ public class LoadScene : MonoBehaviour {
     [SerializeField]
     private GameObject LayerMask;
     [SerializeField]
-    private float i;
-
+    private float i;s
 	// Use this for initialization
 	void Start () {
         i = 2;
