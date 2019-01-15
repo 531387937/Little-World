@@ -8,7 +8,7 @@ public class LoadScene : MonoBehaviour {
     [SerializeField]
     private GameObject LayerMask;
     [SerializeField]
-    private float i;s
+    private float i;
 	// Use this for initialization
 	void Start () {
         i = 2;
