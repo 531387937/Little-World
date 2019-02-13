@@ -4,7 +4,7 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: 12-01_0
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -22,6 +22,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -32,7 +34,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -130,10 +132,10 @@ TextureImporter:
       name: 12-01_0
       rect:
         serializedVersion: 2
-        x: 182
-        y: 5137
-        width: 1093
-        height: 1089
+        x: 0
+        y: 0
+        width: 127
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,7 +143,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08f44cb2ba3fe2e448b9769111cde6f3
+      spriteID: a2c450aed86825c4fa400e05d2e3c3d7
       vertices: []
       indices: 
       edges: []
@@ -149,12 +151,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 39558c2b8641b4245b25e80b8a13d377
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

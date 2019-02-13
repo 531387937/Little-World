@@ -15,7 +15,9 @@ public class Role_MoveForward : MonoBehaviour {
 
     public Animator anim;
     public Animator animC;
+    public Animator next_animC;
     public Animator animP;
+    public Animator next_animP;
     public GameObject Tar;
 
     enum Direction {up,right,down,left};
@@ -116,12 +118,14 @@ public class Role_MoveForward : MonoBehaviour {
 			OnTheBox = false;
 		if (collect == true) {
 			Debug.Log("Can Collect!");
+            animC = next_animC;
 			Cancollect = true;
 		}
 		else
 			Cancollect = false;
 		if (produce == true) {
 			Debug.Log("Can Produce!");
+            animP = next_animP;
 			Canproduce = true;
 		}
 		else
@@ -316,7 +320,7 @@ public class Role_MoveForward : MonoBehaviour {
             }
             animC.SetBool("IsCollected", true);
             StartCoroutine(Wait2());
-            text2.gameObject.SendMessage ("Show");
+            //text2.gameObject.SendMessage ("Show");
 			Collected = true;
 
 			if (SceneManager.GetActiveScene ().name == "Stage5-3" || SceneManager.GetActiveScene ().name == "Stage5-1"){
@@ -348,7 +352,7 @@ public class Role_MoveForward : MonoBehaviour {
             {
                 ProduceA.Play();
             }
-            text1.gameObject.SendMessage ("Show");
+            //text1.gameObject.SendMessage ("Show");
 			Debug.Log("Produced!");
             StartCoroutine("Delay");
             int SceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -413,13 +417,13 @@ public class Role_MoveForward : MonoBehaviour {
 		}
 		if (other.CompareTag ("Collect")){
 			collect = true;
-            animC = other.GetComponent<Animator>();
+            next_animC = other.GetComponent<Animator>();
         }
 		else
 			collect = false;
 		if (other.CompareTag ("Produce")){
 			produce = true;
-            animP = other.GetComponent<Animator>();
+            next_animP = other.GetComponent<Animator>();
         }
 		else
 			produce = false;
