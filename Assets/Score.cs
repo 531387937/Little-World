@@ -41,6 +41,13 @@ public class Score : MonoBehaviour {
         return;
         if (Role_MoveForward.CantClick)
         return;
+        if (Role_MoveForward.outOfRange)
+            return;
+        if (Role_MoveForward.haventcollect)
+        {
+            Role_MoveForward.haventcollect = false;
+            return;
+        }
         if (run)
         {
             reality++;
@@ -48,6 +55,7 @@ public class Score : MonoBehaviour {
             StartCoroutine(Wait());
         }
         Role_MoveForward.clicked = true;
+        Debug.Log("QiZi set clicked = true");
     }
     public void step1()
     {

@@ -23,10 +23,11 @@ public class Role_MoveForward : MonoBehaviour {
     enum Direction {up,right,down,left};
 	Direction Dir = Direction.down;
 	private bool blocked;
-	private bool outOfRange;
+	static public bool outOfRange;
 	public bool goal;
 	public bool Cancollect;
 	public bool Canproduce;
+    static public bool haventcollect;
 	private bool collect;
 	private bool produce;
 	public bool Collected;
@@ -59,9 +60,10 @@ public class Role_MoveForward : MonoBehaviour {
 	void Start () {
 		this.Dir = Direction.down;
 		this.blocked = false; 
-		this.outOfRange = false;
+		outOfRange = false;
 		this.Cancollect = false;
 		this.Canproduce = false;
+        haventcollect = false;
 		this.collect = false;
 		this.produce = false;
 		this.Collected = false;
@@ -106,7 +108,8 @@ public class Role_MoveForward : MonoBehaviour {
 			Debug.Log ("Forward1");
 			clicked = false;
 			anim.SetBool("IsForward",false);
-			return;}
+            Debug.Log("BUG1");
+            return;}
 		if (blocked == true) {
 			if (OnTheBox == false) {
 				Debug.Log ("Forward2");
@@ -202,10 +205,17 @@ public class Role_MoveForward : MonoBehaviour {
 		int temp;
 
         if (CantClick == true)
-			return;
+        {
+            Debug.Log("CantClick == true");
+            return;
+        }
 
-        if (clicked == true) 
-			return;
+        if (clicked == true)
+        {
+            Debug.Log("clicked == true");
+            return;
+        }
+
 
         //clicked = true;
         Debug.Log("3");
@@ -254,10 +264,16 @@ public class Role_MoveForward : MonoBehaviour {
 		int temp;
 
 		if (CantClick == true)
-			return;
+        {
+            Debug.Log("CantClick == true");
+            return;
+        }
 
-		if (clicked == true) 
-			return;
+        if (clicked == true)
+        {
+            Debug.Log("clicked == true");
+            return;
+        }
         //clicked = true;
         if (Dir == Direction.right) {
 			Dir = Direction.up;
@@ -342,7 +358,11 @@ public class Role_MoveForward : MonoBehaviour {
 			return;
 
 		if (Canproduce == false || Collected == false)
-			return;
+        {
+            //Debug.Log("Cant Produce!");
+            haventcollect = true;
+            return;
+        }
 		else {
 
             animP.SetBool("IsProduced", true);
@@ -394,7 +414,7 @@ public class Role_MoveForward : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D(Collider2D other){
-		this.outOfRange = false;
+		outOfRange = false;
 //		Debug.Log (outOfRange);
 		if (other.CompareTag ("highland")){
 			Debug.Log ("Stay");
@@ -430,7 +450,7 @@ public class Role_MoveForward : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D(Collider2D other){
-		this.outOfRange = true;
+		outOfRange = true;
 //		Debug.Log (outOfRange);
 		if (other.CompareTag ("highland")) {
 			blocked = false;

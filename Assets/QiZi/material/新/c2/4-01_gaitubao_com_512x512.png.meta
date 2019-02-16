@@ -99,10 +99,10 @@ TextureImporter:
       name: 4-01_gaitubao_com_512x512_0
       rect:
         serializedVersion: 2
-        x: 202
-        y: 296
-        width: 94
-        height: 80
+        x: 20
+        y: 66
+        width: 468
+        height: 402
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,7 +110,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f26e79a1941ec8a4dad02e3ea004bbce
+      spriteID: 0d92732253368424693772eae9768931
       vertices: []
       indices: 
       edges: []

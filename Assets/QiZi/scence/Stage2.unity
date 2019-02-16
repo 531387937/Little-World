@@ -732,7 +732,7 @@ Transform:
   m_GameObject: {fileID: 163536809}
   m_LocalRotation: {x: -0, y: -0, z: 0.12967892, w: 0.9915561}
   m_LocalPosition: {x: 0.908, y: 0.522, z: 0}
-  m_LocalScale: {x: 0.12267239, y: 0.12267239, z: 0.12267239}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -750,9 +750,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.124739915, y: -13.141346}
+  m_Offset: {x: 0, y: -5}
   serializedVersion: 2
-  m_Radius: 5.5796723
+  m_Radius: 1.7
 --- !u!50 &163536813
 Rigidbody2D:
   serializedVersion: 4
@@ -793,7 +793,9 @@ MonoBehaviour:
   ProduceA: {fileID: 0}
   anim: {fileID: 163536815}
   animC: {fileID: 0}
+  next_animC: {fileID: 0}
   animP: {fileID: 0}
+  next_animP: {fileID: 0}
   Tar: {fileID: 1741151674}
   goal: 0
   Cancollect: 0
@@ -1725,7 +1727,9 @@ MonoBehaviour:
   ProduceA: {fileID: 0}
   anim: {fileID: 0}
   animC: {fileID: 0}
+  next_animC: {fileID: 0}
   animP: {fileID: 0}
+  next_animP: {fileID: 0}
   Tar: {fileID: 0}
   goal: 0
   Cancollect: 0
